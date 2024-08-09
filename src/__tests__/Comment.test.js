@@ -2,10 +2,10 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import CommentComponent from "../CommentComponent"; // Ajuste o caminho conforme necessário
+import Post from "../components/PostComments"; // Ajuste o caminho conforme necessário
 
 test("should allow users to add two comments", () => {
-  render(<CommentComponent />);
+  render(<Post />);
 
   // Simular a adição do primeiro comentário
   fireEvent.change(screen.getByTestId("comment-input"), {
